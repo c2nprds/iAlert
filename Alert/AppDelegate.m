@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  Alert
 //
-//  Created by 大輔 横山 on 12/04/16.
-//  Copyright (c) 2012年 株式会社 Dazzle. All rights reserved.
+//  Created by c2nprds on 04/16/12.
+//  Copyright (c) 2012 c2nprds. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -15,6 +15,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // AVAudioPlayer play on background
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    
     return YES;
 }
 							

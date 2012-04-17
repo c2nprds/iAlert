@@ -16,6 +16,10 @@
 		A103D0C8153C054E0015CA89 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A103D0C6153C054E0015CA89 /* MainStoryboard_iPhone.storyboard */; };
 		A103D0CB153C054E0015CA89 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A103D0C9153C054E0015CA89 /* MainStoryboard_iPad.storyboard */; };
 		A103D0CE153C054E0015CA89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A103D0CD153C054E0015CA89 /* ViewController.m */; };
+		A103D0D6153C1A440015CA89 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A103D0D4153C1A2E0015CA89 /* AVFoundation.framework */; };
+		A103D0DB153C24030015CA89 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A103D0D9153C23F70015CA89 /* AudioToolbox.framework */; };
+		A103D0DD153C24EE0015CA89 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A103D0DC153C24EE0015CA89 /* alert.mp3 */; };
+		A103D0E0153C25C40015CA89 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A103D0DE153C25B20015CA89 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +27,20 @@
 		A103D0B4153C054E0015CA89 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A103D0B6153C054E0015CA89 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A103D0B8153C054E0015CA89 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A103D0BC153C054E0015CA89 /* Alert-Info.plist */ = {isa = PBXFileReference; path = "Alert-Info.plist"; sourceTree = "<group>"; };
+		A103D0BC153C054E0015CA89 /* Alert-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Alert-Info.plist"; sourceTree = "<group>"; };
 		A103D0BE153C054E0015CA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A103D0C0153C054E0015CA89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A103D0C2153C054E0015CA89 /* Alert-Prefix.pch */ = {isa = PBXFileReference; path = "Alert-Prefix.pch"; sourceTree = "<group>"; };
-		A103D0C3153C054E0015CA89 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A103D0C2153C054E0015CA89 /* Alert-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Alert-Prefix.pch"; sourceTree = "<group>"; };
+		A103D0C3153C054E0015CA89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A103D0C4153C054E0015CA89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A103D0C7153C054E0015CA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		A103D0CA153C054E0015CA89 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		A103D0CC153C054E0015CA89 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		A103D0CC153C054E0015CA89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A103D0CD153C054E0015CA89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A103D0D4153C1A2E0015CA89 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A103D0D9153C23F70015CA89 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A103D0DC153C24EE0015CA89 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
+		A103D0DE153C25B20015CA89 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,8 +48,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A103D0DB153C24030015CA89 /* AudioToolbox.framework in Frameworks */,
+				A103D0D6153C1A440015CA89 /* AVFoundation.framework in Frameworks */,
 				A103D0B5153C054E0015CA89 /* UIKit.framework in Frameworks */,
 				A103D0B7153C054E0015CA89 /* Foundation.framework in Frameworks */,
+				A103D0E0153C25C40015CA89 /* MediaPlayer.framework in Frameworks */,
 				A103D0B9153C054E0015CA89 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,9 +80,12 @@
 		A103D0B3153C054E0015CA89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A103D0B4153C054E0015CA89 /* UIKit.framework */,
-				A103D0B6153C054E0015CA89 /* Foundation.framework */,
+				A103D0D9153C23F70015CA89 /* AudioToolbox.framework */,
+				A103D0D4153C1A2E0015CA89 /* AVFoundation.framework */,
 				A103D0B8153C054E0015CA89 /* CoreGraphics.framework */,
+				A103D0B6153C054E0015CA89 /* Foundation.framework */,
+				A103D0DE153C25B20015CA89 /* MediaPlayer.framework */,
+				A103D0B4153C054E0015CA89 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -93,6 +107,7 @@
 		A103D0BB153C054E0015CA89 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A103D0DC153C24EE0015CA89 /* alert.mp3 */,
 				A103D0BC153C054E0015CA89 /* Alert-Info.plist */,
 				A103D0BD153C054E0015CA89 /* InfoPlist.strings */,
 				A103D0C0153C054E0015CA89 /* main.m */,
@@ -155,6 +170,7 @@
 				A103D0BF153C054E0015CA89 /* InfoPlist.strings in Resources */,
 				A103D0C8153C054E0015CA89 /* MainStoryboard_iPhone.storyboard in Resources */,
 				A103D0CB153C054E0015CA89 /* MainStoryboard_iPad.storyboard in Resources */,
+				A103D0DD153C24EE0015CA89 /* alert.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
